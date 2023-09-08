@@ -8,6 +8,9 @@
     <style>
 form {
     border: 3px solid #f1f1f1;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 input[type=text], input[type=password] {
   width: 100%;
@@ -61,17 +64,17 @@ span.psw {
     </style>
 </head>
 <body>
-    <form action="action_page.php" method="post">
+    <form>
         <div class="image">
           <img src="./required.png" alt="image_missing" class="avatar">
         </div>
       
         <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="myname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="myname" required>
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="pass"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
       
           <button type="submit">Login</button>
           <label>
