@@ -12,14 +12,7 @@ form {
     margin-left: 500px;
     margin-right: 500px;
 }
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+
 button {
   background-color: #04AA6D;
   color: white;
@@ -30,30 +23,38 @@ button {
   width: 100%;
 }
 button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color: #ce2e23;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 .image{
   text-align: center;
   margin: 24px 0 12px 0;
 }
-img.avatar {
+img.pic {
   width: 40%;
   border-radius: 50%;
 }
-.container {
+.cont {
   padding: 16px;
 }
-span.psw {
+span.passw {
   float: right;
   padding-top: 16px;
 }
 @media screen and (max-width: 300px) {
-  span.psw {
+  span.passw {
     display: block;
     float: none;
   }
@@ -66,10 +67,10 @@ span.psw {
 <body>
     <form>
         <div class="image">
-          <img src="./required.png" alt="image_missing" class="avatar">
+          <img src="./required.png" alt="image_missing" class="pic">
         </div>
       
-        <div class="container">
+        <div class="cont">
           <label for="myname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" id="myname" required>
       
@@ -82,9 +83,9 @@ span.psw {
           </label>
         </div>
       
-        <div class="container" style="background-color:#f1f1f1">
+        <div class="cont" style="background-color:#dcd8d8">
           <button type="button" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
+          <span class="passw"><a href="#">Forgot password?</a></span>
         </div>
       </form>
 </body>
